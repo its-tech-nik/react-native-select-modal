@@ -32,13 +32,13 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-vector-icons": "^4.2.0",
-    "react-native-modal": "^11.1.0"
+    "react-native-vector-icons": "*",
+    "react-native-modal": "*"
   },
   "devDependencies": {
     "react": "16.6.1",
     "react-native": "~0.57.7",
-    "react-native-vector-icons": "^4.2.0",
-    "react-native-modal": "^11.1.0"
+    "react-native-vector-icons": "*",
+    "react-native-modal": "*"
   }
 }
