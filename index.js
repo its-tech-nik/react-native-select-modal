@@ -206,7 +206,7 @@ class Select2 extends Component {
                                 style={[styles.button, buttonStyle, { marginRight: 5, marginLeft: 10, borderWidth: 1, borderColor: colorTheme }]} />
                             <Button
                                 defaultFont={this.defaultFont}
-                                disabled={this.selectedItem.length === 0}
+                                disabled={selectedItem.length === 0}
                                 onPress={() => {
                                     let selectedIds = [], selectedObjectItems = [];
                                     selectedItem.map(item => {
@@ -214,7 +214,7 @@ class Select2 extends Component {
                                         selectedObjectItems.push(item);
                                     })
                                     onSelect && onSelect(selectedIds, selectedObjectItems);
-                                    this.setState({ show: false, keyword: '', preSelectedItem: selectedItem });
+                                    this.setState({ show: false, keyword: '', preSelectedItem: selectedItem, selectedItem: [] });
                                 }}
                                 title={selectButtonText}
                                 backgroundColor={colorTheme}
