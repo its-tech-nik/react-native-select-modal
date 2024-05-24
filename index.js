@@ -124,7 +124,11 @@ class Select2 extends Component {
             </Text>
         );
     }
-    closeModal = () => this.setState({ show: false });
+    closeModal = () => {
+        this.setState({ show: false });
+        this.cancelSelection();
+    }
+    
     showModal = () => this.setState({ show: true });
 
     render() {
