@@ -128,7 +128,7 @@ class Select2 extends Component {
         this.setState({ show: false });
         this.cancelSelection();
     }
-    
+
     showModal = () => this.setState({ show: true });
 
     render() {
@@ -206,6 +206,7 @@ class Select2 extends Component {
                                 style={[styles.button, buttonStyle, { marginRight: 5, marginLeft: 10, borderWidth: 1, borderColor: colorTheme }]} />
                             <Button
                                 defaultFont={this.defaultFont}
+                                disabled={this.selectedItem.length === 0}
                                 onPress={() => {
                                     let selectedIds = [], selectedObjectItems = [];
                                     selectedItem.map(item => {
