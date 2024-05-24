@@ -96,7 +96,7 @@ class Select2 extends Component {
             if (item.checked) selectedItem.push(item);
         })
         this.setState({ data, selectedItem });
-        onOptionSelected();
+        onOptionSelected(item);
     }
     keyExtractor = (item, idx) => idx.toString();
     renderItem = ({ item, idx }) => {
